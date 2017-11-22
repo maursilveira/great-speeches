@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'OldNewspaperTypes';
+	src: url('../fonts/OldNewspaperTypes.woff2') format('woff2'),
+		url('../fonts/OldNewspaperTypes.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Grenadier NF';
+	src: url('../fonts/GrenadierNF.woff2') format('woff2'),
+		url('../fonts/GrenadierNF.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.hidden {
+  display: none;
+}
+
+.clearfix:after {
+  content: " "; /*Insert a blank space*/
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+#container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ede8c7;
+  color: #000000;
+  font-family: 'OldNewspaperTypes', Times, serif;
+}
+
+header h1 {
+  font-family: 'Grenadier NF', Helvetica, sans-serif;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 20px;
+}
+header h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#audioBox {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+#audioBox h2 {
+  margin-bottom: 20px;
+}
+
+#speech {
+  font-style: italic;
+}
+
+#optionGallery {
+  margin: 50px 30px;
+  position: relative;
+}
+#optionGallery div {
+  margin: 0 30px;
+  display: inline-grid;
+  text-align: center;
+}
+#optionGallery div .photos,
+#optionGallery div .captions {
+  display: block;
+  padding-bottom: 10px;
+  outline: 0;
+}
+#optionGallery #gameOver {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1078px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 40px;
+}
+#optionGallery #gameOver #title {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  font-size: 80px;
+}
+
+#buttonArea {
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+#buttonArea #next {
+  font-size: 16px;
+  padding: 6px 30px;
+}
+#buttonArea #restart {
+  display: none;
+  font-size: 16px;
+  padding: 6px 38px;
+}
+#buttonArea p {
+  margin-top: 30px;
+  text-align: right;
+}

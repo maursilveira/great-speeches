@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+  <title>Great Speeches</title>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>Great Speeches</h1>
+      <h2>Can you guess who made each speech?</h2>
+    </header>
+
+
+
+    <div id="audioBox">
+      <h2>Speech #<span id="ordenation"></span>: <span id="speech">"<span></span>"</span></h2>
+      <audio id="myAudio" controls>
+        <source src="audio/king.mp3" type="audio/mpeg">
+          Failed
+      </audio>
+    </div>
+
+    <section id="optionGallery">
+      <div>
+        <a href="#"><img id="a" class="photos" src="images/lincoln.jpg" alt="Photo A"></a>
+        <p class="captions"></p>
+      </div>
+      <div>
+        <a href="#"><img id="b" class="photos" src="images/lincoln.jpg" alt="Photo B"></a>
+        <p class="captions"></p>
+      </div>
+      <div>
+        <a href="#"><img id="c" class="photos" src="images/lincoln.jpg" alt="Photo C"></a>
+        <p class="captions"></p>
+      </div>
+      <div>
+        <a href="#"><img id="d" class="photos" src="images/lincoln.jpg" alt="Photo D"></a>
+        <p class="captions"></p>
+      </div>
+      <div id="gameOver">
+        <p id="title">Quizz is over</p>
+        <p>Your final score is <span id="overScore"></span> out of <span id="overTotal"></span></p>
+      </div>
+    </section>
+
+    <div id="buttonArea">
+      <button id="next">Skip question</button>
+      <button id="restart">Restart test</button>
+      <p>Score: <span id="score"></span>/<span id="total"></span></p>
+    </div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
